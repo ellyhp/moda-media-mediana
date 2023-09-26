@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calular moda, media y mediana</title>
+</head>
+<body class="bg-zinc-900">
+
+
+    <div  class="flex justify-center items-center flex-col h-screen gap-10">
+        
+        <div>
+            <div class="group relative w-72 md:w-80 lg:w-96">
+                <label for="1" class="block w-full pb-1 text-sm font-medium text-white transition-all duration-200 ease-in-out group-focus-within:text-violet-500">Insertar numero</label>
+                <input id="1" type="text" class="peer h-10 w-full rounded-md bg-gray-50 px-4  outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-violet-400" placeholder="11,9,30"/>
+              </div>   
+              
+        </div>
+       <div>
+            <a id="btnMedia" href="#_" class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+                <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Media</span>
+            </a>
+            <a id="btnMediana" href="#_" class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+                <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Mediana</span>
+            </a>
+            <a id="btnModa" href="#_" class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+                <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Moda</span>
+            </a>
+       </div>
+       <h2 class="text-white" id="Resultado"></h2>
+
+    </div>
+
+
+    <script src="mediana.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
